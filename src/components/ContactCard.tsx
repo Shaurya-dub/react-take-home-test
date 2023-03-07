@@ -35,14 +35,6 @@ function ContactCard(contactObj: deleteProps) {
   };
   return (
     <div className="contactCard">
-      <button
-        onClick={() => {
-          setEditing(true);
-        }}
-        className="editButton"
-      >
-        Edit
-      </button>
       {editing ? (
         <form action="#" onSubmit={handleSubmit}>
           <label htmlFor="contactName">Name</label>
@@ -80,6 +72,14 @@ function ContactCard(contactObj: deleteProps) {
         </form>
       ) : (
         <>
+          <button
+            onClick={() => {
+              setEditing(true);
+            }}
+            className="editButton"
+          >
+            Edit
+          </button>
           <h2>{contactInfo.name}</h2>
           <div className="details">
             <p>Age: {contactInfo.age}</p>
@@ -89,10 +89,9 @@ function ContactCard(contactObj: deleteProps) {
 
           <button
             onClick={async () => {
-              await deleteContact(contactInfo.id)
-              .catch((e) => {
-                console.error('soemthing went wrong', e)
-              })
+              await deleteContact(contactInfo.id).catch((e) => {
+                console.error("soemthing went wrong", e);
+              });
             }}
             className="deleteButton"
           >
