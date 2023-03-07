@@ -1,0 +1,33 @@
+.contactForm {
+    background-color: #fffff0aa;
+   display: flex;
+   flex-direction:column;
+   margin:auto;
+   width: 40%;
+   padding:30px;
+   border: 10px solid #006d77;
+   border-radius:20px;
+
+}
+.contactForm input {
+    padding:5px;
+}
+
+.contactForm button {
+    align-self: center;
+    width:150px;
+    margin-top:10px;
+    border:0px;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #d0eff9;
+    color: #006d77;
+    font-weight:bold;
+    /* text-align:center; */
+    transition:all 0.2s ease;
+}
+
+.contactForm button:hover, .contactForm button:focus {
+background-color: #006d77;
+color: #edf6f9;
+}

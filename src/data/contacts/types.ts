@@ -5,3 +5,4 @@ export interface IContact {
     age?: number;
     email?: string;
 }
+

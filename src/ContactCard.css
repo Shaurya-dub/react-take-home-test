@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+.contactCard {
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    flex-direction:column;
+    background-color:#006d77bc;
+    color: #edf6f9;
+    width:35%;
+    padding:20px;
+    font-size: 1.5rem;
+    border-radius:25px;
+    text-align: center;
+    margin-bottom:20px;
+    margin:20px;
+    align-items: center;
+}
+.contactCard input {
+    display:block;
+}
+
+.contactCard h2 {
+    color:#ffddd2;
+    font-weight: 600;
+}
+.contactCard button {
+    border: 0px;
+    background-color: #edf6f9;
+    margin:7px;
+    transition: all 0.2s ease;
+}
+.editButton {
+    max-width:80px;
+    border-radius:15px;
+    color: #006d77;
+    align-self:flex-start;
+
+}
+
+.deleteButton:hover, .deleteButton:focus {
+  background-color: #d90429;
+  color:#edf6f9;
+}
+.editButton:hover, .editButton:focus {
+  background-color: #23c3d1;
+  color:#edf6f9;
+}
